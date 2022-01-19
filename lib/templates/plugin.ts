@@ -1,6 +1,9 @@
+// @ts-ignore
 import AriaUI from 'aria-ui-core'
+// @ts-ignore
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin(({ vueApp }) => {
-  vueApp.use(AriaUI)
+  // @ts-ignore
+  vueApp.use(AriaUI, <%= JSON.stringify(options, null, 2) %>)
 })
