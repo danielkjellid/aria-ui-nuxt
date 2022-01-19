@@ -1,0 +1,17 @@
+{
+  "name": "aria-ui-nuxt",
+  "version": "1.0.0",
+  "description": "A nuxt wrapper for the aria-ui-core component library.",
+  "scripts": {
+    "test": "null"
+  },
+  "author": "Daniel Kjellid",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "aria-ui-core": "^1.0.0"
+  }
+}
