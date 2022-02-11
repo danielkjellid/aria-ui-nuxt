@@ -1,6 +1,6 @@
 {
   "name": "aria-ui-nuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nuxt wrapper for the aria-ui-core component library.",
   "main": "lib/module.ts",
   "type": "module",
@@ -32,6 +32,6 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "aria-ui-core": "^1.0.0"
+    "aria-ui-core": "^1.0.1"
   }
 }
