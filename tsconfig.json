@@ -1,20 +1,3 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "node",
-    "target": "es2019",
-    "module": "es2015",
-    "esModuleInterop": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "declaration": true,
-    "importHelpers": true,
-    "strict": true,
-    "experimentalDecorators": true,
-    "typeRoots": ["node_modules/@types"],
-    "types": [
-      "@nuxt/types"
-    ]
-  },
-  "include": ["lib/**/*.ts", "lib/*.ts"],
-  "exclude": ["node_modules", "lib/templates/plugin.ts"]
+  "extends": "./playground/.nuxt/tsconfig.json"
 }

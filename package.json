@@ -1,37 +1,39 @@
 {
   "name": "aria-ui-nuxt",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "A nuxt wrapper for the aria-ui-core component library.",
-  "main": "lib/module.ts",
+  "license": "MIT",
   "type": "module",
-  "scripts": {
-    "prettier:check": "prettier --check \"**/*.{js,ts,tsx,vue,css,json,md}\"",
-    "prettier:fix": "prettier --write \"**/*.{js,ts,tsx,css,vue,json,md}\"",
-    "eslint:check": "eslint --ext vue,ts,js lib/*.ts",
-    "eslint:fix": "eslint --ext vue,ts,js lib/*.ts --fix",
-    "lint": "npm run prettier:check && npm run eslint:check",
-    "lint:fix": "npm run prettier:fix && npm run eslint:fix"
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
   },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "Daniel Kjellid",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/danielkjellid/aria-ui-nuxt.git"
   },
-  "devDependencies": {
-    "@babel/core": "^7.16.10",
-    "@babel/eslint-parser": "^7.16.5",
-    "@nuxt/kit": "^0.8.1-edge",
-    "@nuxt/types": "^2.15.8",
-    "@typescript-eslint/eslint-plugin": "^5.10.0",
-    "@typescript-eslint/parser": "^5.10.0",
-    "eslint": "^8.7.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "prettier": "^2.5.1",
-    "typescript": "^4.5.4"
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
     "aria-ui-core": "^1.0.9"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "eslint": "latest",
+    "nuxt3": "latest"
   }
 }
