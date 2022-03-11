@@ -1,0 +1,6 @@
+import { defineNuxtPlugin } from "#app";
+import AriaUI from "aria-ui-core";
+
+export default defineNuxtPlugin(({ vueApp }) => {
+  vueApp.use(AriaUI<% if (options.inkline) { %>, <%= JSON.stringify(options.inkline, 4) %><% } %>);
+});
