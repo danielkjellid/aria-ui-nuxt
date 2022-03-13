@@ -3780,10 +3780,10 @@
   "resolved" "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
   "version" "2.0.1"
 
-"aria-ui-core@^1.0.17":
-  "integrity" "sha512-df7enjRFU1mHObR2Icm6H18Go/digrYd5aN4Vr8bYodNpwluZZL5psYB7eAScPhCIDB6bMuSoRAjieRYx3fXOA=="
-  "resolved" "https://registry.npmjs.org/aria-ui-core/-/aria-ui-core-1.0.17.tgz"
-  "version" "1.0.17"
+"aria-ui-core@^1.0.18":
+  "integrity" "sha512-DuAQgwpGSJ/FqDbq3mv0I7uVLyKnireqbKj9yenPEHGLm0ZyAd480+oZYtoVmjX5YhI/EPiZRoM01lxAaFeYsA=="
+  "resolved" "https://registry.npmjs.org/aria-ui-core/-/aria-ui-core-1.0.18.tgz"
+  "version" "1.0.18"
 
 "arr-diff@^4.0.0":
   "integrity" "sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA="
