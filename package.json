@@ -1,6 +1,6 @@
 {
   "name": "aria-ui-nuxt",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "A nuxt wrapper for the aria-ui-core component library.",
   "license": "MIT",
   "type": "module",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-    "aria-ui-core": "^1.0.19"
+    "aria-ui-core": "^1.0.20"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
